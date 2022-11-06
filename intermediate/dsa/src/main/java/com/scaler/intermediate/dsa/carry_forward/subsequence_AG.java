@@ -15,7 +15,7 @@ public class subsequence_AG {
             for(int i = N-1 ; i >= 0; i--){//loop runs N times - N
                 if(arr[i] == 'G')   gCount++;
                 if(arr[i] == 'A')   pairCount = pairCount + gCount;
-                pairCount = pairCount % 1000000007; //perform modulo in for loop itselfto avoid overflow
+                pairCount = pairCount % 1000000007; //perform modulo in for loop itself to avoid overflow
             }
         }
         return pairCount;
