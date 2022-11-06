@@ -1,7 +1,5 @@
 package com.scaler.intermediate.dsa.carry_forward;
 
-import java.util.logging.Logger;
-
 public class subsequence_AG {
     public static void main(String[] args) {
         int ans = solve("ABCGAG");
