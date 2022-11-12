@@ -14,6 +14,9 @@ public class MinimumSwaps {
             }
         }
         //edge cases for k
+        //if k == 0, ele <= B are zero then no swaps required, so return 0
+        //if k == 1, ele <= B is only one, then still no swap required as it is only one ele
+        //if k == n, all ele in array are <= B, so no swap required as all them are already together
         if(k == 0 || k ==1 || k == n) return 0;
         //now iterate on first subarray
         int s = 0, e = k-1;
