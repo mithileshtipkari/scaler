@@ -39,4 +39,8 @@ class Rectangle{
     boolean isSquare(){
         return l == b;
     }
+
+    int perimeter(){
+        return 2*(l+b);
+    }
 }
