@@ -1,5 +1,7 @@
 package com.scaler.intermediate.dsa.hashing;
 
+import java.util.HashSet;
+
 public class CountOfDistinctEle {
     public int solve(int[] A) {
         int n = A.length;
