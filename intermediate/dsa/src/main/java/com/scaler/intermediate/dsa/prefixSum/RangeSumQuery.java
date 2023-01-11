@@ -18,10 +18,10 @@ public class RangeSumQuery{
             } else {
                 return new long[0];
             }
-            
+
             for(int i=1; i<n; i++){//N
                 if(A[i]>=1 && A[i]<=1000000000){ //problem constaints
-                    pf[i] = pf[i-1] + A[i]; //while adding ele into pf if u use pf type as int, it can result in overflow 
+                    pf[i] = pf[i-1] + A[i]; //while adding ele into pf if u use pf type as int, it can result in overflow
                     //10^9 + 10^9 -> cannot be stored in int, so take pf type as long, it can store number upto 10^18
                 } else {
                     return new long[0];
@@ -31,7 +31,7 @@ public class RangeSumQuery{
             // for(int k: pf){
             //     System.out.println("k -" + k);
             // }
-            //iterate on B queries, fetch sum from PF array, put it in ans array 
+            //iterate on B queries, fetch sum from PF array, put it in ans array
             for(int i=0; i<m; i++){//M
                 int L = B[i][0];
                 int R = B[i][1];
@@ -44,7 +44,7 @@ public class RangeSumQuery{
                         ans[i] = pf[R-1] - pf[L-2];
                     }
                 } else {
-                    return new long[0];            
+                    return new long[0];
                 }
             }
             //printing
