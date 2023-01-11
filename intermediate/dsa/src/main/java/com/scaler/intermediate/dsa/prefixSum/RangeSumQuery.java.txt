@@ -1,3 +1,5 @@
+package com.scaler.intermediate.dsa.prefixSum;
+
 //TC - O(N+M)
 //SC - O(8N+8M) => O(N+M) - to create pf & ans array
 
